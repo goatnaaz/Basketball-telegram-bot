@@ -29,6 +29,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.5.2</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.telegram</groupId>
 			<artifactId>telegrambots-spring-boot-starter</artifactId>
 			<version>6.0.1</version>
@@ -42,9 +48,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M6</version>
-				<configuration>
-					<useSystemClassLoader>false</useSystemClassLoader>
-				</configuration>
+
 			</plugin>
 
 

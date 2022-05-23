@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: added configuration to maven surefire plugin">
+    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: added new  configuration to maven surefire plugin">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653322883575</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JRTB-2: added configuration to maven surefire plugin">
+      <created>1653323326097</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653323326097</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JRTB-2: added new  configuration to maven surefire plugin">
+      <created>1653323435797</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653323435797</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +170,7 @@
     <MESSAGE value="JRTB-2: updated project version to 0.1.0" />
     <MESSAGE value="JRTB-2: added maven surefire plugin" />
     <MESSAGE value="JRTB-2: added configuration to maven surefire plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: added configuration to maven surefire plugin" />
+    <MESSAGE value="JRTB-2: added new  configuration to maven surefire plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: added new  configuration to maven surefire plugin" />
   </component>
 </project>
