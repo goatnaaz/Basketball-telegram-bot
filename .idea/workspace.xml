@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: added junit">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: added junit into surefire plugin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/bot/JavaRushTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/bot/JavaRushTelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653324386607</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="JRTB-2: added junit into surefire plugin">
+      <created>1653325084476</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653325084476</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +188,7 @@
     <MESSAGE value="JRTB-2: added configuration to maven surefire plugin" />
     <MESSAGE value="JRTB-2: added new  configuration to maven surefire plugin" />
     <MESSAGE value="JRTB-2: added junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: added junit" />
+    <MESSAGE value="JRTB-2: added junit into surefire plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: added junit into surefire plugin" />
   </component>
 </project>
