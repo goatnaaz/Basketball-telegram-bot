@@ -40,6 +40,7 @@ public class JavaRushTelegramBot extends TelegramLongPollingBot {
             try {
                 execute(sm);
             } catch (TelegramApiException e) {
+
                 //todo add logging to the project.
                 e.printStackTrace();
             }
