@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: added junit into surefire plugin">
+    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-2: changed workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +52,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BasketballTelegrambotApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Basketballtelegrambot.BasketballTelegrambotApplication" />
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653326607206</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="JRTB-2: changed workspace.xml">
+      <created>1653385509515</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653385509515</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +202,7 @@
     <MESSAGE value="JRTB-2: added new  configuration to maven surefire plugin" />
     <MESSAGE value="JRTB-2: added junit" />
     <MESSAGE value="JRTB-2: added junit into surefire plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: added junit into surefire plugin" />
+    <MESSAGE value="JRTB-2: changed workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="JRTB-2: changed workspace.xml" />
   </component>
 </project>
