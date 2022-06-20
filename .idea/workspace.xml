@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="BTB-3: added Command pattern for handling Telegram Bot commands">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stop.sh" afterDir="false" />
+
+    <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="JRTB-13: implement deployment process via docker">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/FutureCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/PastCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/FutureCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/PastCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Basketball-telegram-bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Basketball-telegram-bot.iml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/BasketballTelegrambotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/BasketballTelegrambotApplication.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/StartCommand.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BTB-3" />
+
+        <entry key="$PROJECT_DIR$" value="STEP_4_JRTB-13" />
+
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,7 +126,16 @@
       <option name="project" value="LOCAL" />
       <updated>1653656303657</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+
+    <task id="LOCAL-00004" summary="JRTB-13: implement deployment process via docker">
+      <created>1654520397079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654520397079</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +143,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -134,7 +165,10 @@
     <MESSAGE value="BTB-2 : added styb telegram bo to the project" />
     <MESSAGE value="BTB-2 : added stub telegram bot to the project" />
     <MESSAGE value="BTB-3: added Command pattern for handling Telegram Bot commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="BTB-3: added Command pattern for handling Telegram Bot commands" />
+
+    <MESSAGE value="JRTB-13: implement deployment process via docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="JRTB-13: implement deployment process via docker" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Basketball_telegram_bot2_0$BasketballTelegrambotApplication.ic" NAME="BasketballTelegrambotApplication Coverage Results" MODIFIED="1653565437999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

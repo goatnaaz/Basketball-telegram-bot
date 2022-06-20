@@ -3,6 +3,7 @@ package com.example.Basketballtelegrambot.command;
 
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 import com.google.common.collect.ImmutableMap;
+import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static com.example.Basketballtelegrambot.command.CommandName.*;
 
@@ -20,6 +21,8 @@ public class CommandContainer {
                 .put(STOP.getCommandName(), new StopCommand(sendBotMessageService))
                 .put(HELP.getCommandName(), new HelpCommand(sendBotMessageService))
                 .put(NO.getCommandName(), new NoCommand(sendBotMessageService))
+                .put(FUTURE.getCommandName() , new FutureCommand(sendBotMessageService))
+                .put(PAST.getCommandName() , new PastCommand(sendBotMessageService))
                 .build();
 
         unknownCommand = new UnknownCommand(sendBotMessageService);
