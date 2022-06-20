@@ -7,6 +7,11 @@ public enum CommandName {
 
     START("/start"),
     STOP("/stop"),
+
+    FUTURE("/future_events"),
+
+    PAST("/past_events"),
+
     NO("/no"),
 
     HELP("/help");
