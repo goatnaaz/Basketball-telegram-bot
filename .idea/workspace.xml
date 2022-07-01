@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="fc7e75bd-cab4-46d6-99e7-2e7fa6d22ff2" name="Changes" comment="BTB_STEP_4 : createt command for killer features and tests for them">
       <change afterPath="$PROJECT_DIR$/docker-compose-test.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/StatCommand.java" afterDir="false" />
@@ -15,10 +16,12 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V00001__add_tg_user_table.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Basketball-telegram-bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Basketball-telegram-bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/bot/BasketballTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/bot/BasketballTelegramBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" afterDir="false" />
@@ -30,6 +33,14 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/StartCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/StartCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/StopCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Basketballtelegrambot/commandTest/StopCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
+
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/CommandName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Basketballtelegrambot/command/StartCommand.java" afterDir="false" />
+
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +210,7 @@
       <option name="project" value="LOCAL" />
       <updated>1653656303657</updated>
     </task>
+
     <task id="LOCAL-00004" summary="JRTB-13: implement deployment process via docker">
       <created>1654520397079</created>
       <option name="number" value="00004" />
@@ -206,6 +218,7 @@
       <option name="project" value="LOCAL" />
       <updated>1654520397079</updated>
     </task>
+
     <task id="LOCAL-00005" summary="BTB_STEP_4 : createt command for killer features and tests for them">
       <created>1655732404504</created>
       <option name="number" value="00005" />
@@ -214,6 +227,7 @@
       <updated>1655732404504</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,9 +257,11 @@
     <MESSAGE value="BTB-2 : added styb telegram bo to the project" />
     <MESSAGE value="BTB-2 : added stub telegram bot to the project" />
     <MESSAGE value="BTB-3: added Command pattern for handling Telegram Bot commands" />
+
     <MESSAGE value="JRTB-13: implement deployment process via docker" />
     <MESSAGE value="BTB_STEP_4 : createt command for killer features and tests for them" />
     <option name="LAST_COMMIT_MESSAGE" value="BTB_STEP_4 : createt command for killer features and tests for them" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Basketball_telegram_bot2_0$BasketballTelegrambotApplication.ic" NAME="BasketballTelegrambotApplication Coverage Results" MODIFIED="1653565437999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

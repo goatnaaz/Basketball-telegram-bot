@@ -24,7 +24,9 @@ public class CommandContainer {
                 .put(NO.getCommandName(), new NoCommand(sendBotMessageService))
                 .put(FUTURE.getCommandName() , new FutureCommand(sendBotMessageService))
                 .put(PAST.getCommandName() , new PastCommand(sendBotMessageService))
+
                 .put(STAT.getCommandName(), new StatCommand(telegramUserService ,sendBotMessageService))
+
                 .build();
 
         unknownCommand = new UnknownCommand(sendBotMessageService);
