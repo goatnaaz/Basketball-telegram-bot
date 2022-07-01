@@ -2,6 +2,8 @@ package com.example.Basketballtelegrambot.bot;
 
 import com.example.Basketballtelegrambot.command.CommandContainer;
 import com.example.Basketballtelegrambot.service.SendBotMessageServiceImpl;
+import com.example.Basketballtelegrambot.service.TelegramUserService;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -26,8 +28,8 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
 
     private final CommandContainer commandContainer;
 
-    public BasketballTelegramBot() {
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this));
+    public BasketballTelegramBot(TelegramUserService telegramUserService) {
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService );
     }
 
 

@@ -14,6 +14,8 @@ public enum CommandName {
 
     NO("/no"),
 
+    STAT("/stat"),
+
     HELP("/help");
 
     private final String commandName;

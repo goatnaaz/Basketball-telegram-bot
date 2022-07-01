@@ -4,6 +4,7 @@ import com.example.Basketballtelegrambot.bot.BasketballTelegramBot;
 import com.example.Basketballtelegrambot.command.Command;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 import com.example.Basketballtelegrambot.service.SendBotMessageServiceImpl;
+import com.example.Basketballtelegrambot.service.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.mockito.internal.verification.VerificationModeFactory;
@@ -18,6 +19,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 abstract class AbstractCommandTest {
     protected BasketballTelegramBot basketballTelegramBot = Mockito.mock(BasketballTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(basketballTelegramBot);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
 
     abstract String getCommandName();
 
