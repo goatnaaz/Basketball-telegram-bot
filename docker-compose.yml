@@ -1,10 +1,18 @@
-version: '3.1'
+
+
+version: '3.5'
 
 services:
-  btb:
+  test_btb_bot:
     build:
       context: .
     environment:
-      - BOT_NAME=${BOT_NAME}
-      - BOT_TOKEN=${BOT_TOKEN}
+      BOT_NAME: ${BOT_NAME:-test_btb_bot}
+      BOT_TOKEN: ${BOT_TOKEN:-5424983064:AAH3QNgDT1GhG2lHuqN4I8whDjXDoj0Wpe8}
     restart: always
+
+
+
+
+
+
