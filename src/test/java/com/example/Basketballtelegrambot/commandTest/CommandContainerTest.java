@@ -5,6 +5,7 @@ import com.example.Basketballtelegrambot.command.CommandContainer;
 import com.example.Basketballtelegrambot.command.CommandName;
 import com.example.Basketballtelegrambot.command.UnknownCommand;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
+
 import com.example.Basketballtelegrambot.service.TelegramUserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +26,6 @@ public class CommandContainerTest {
         TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
         commandContainer = new CommandContainer(sendBotMessageService, telegramUserService);
     }
-
     @Test
     public void shouldGetAllTheExistingCommands() {
         //when-then
