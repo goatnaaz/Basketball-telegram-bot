@@ -2,12 +2,16 @@ package com.example.Basketballtelegrambot.bot;
 
 import com.example.Basketballtelegrambot.command.CommandContainer;
 import com.example.Basketballtelegrambot.service.SendBotMessageServiceImpl;
-import com.example.Basketballtelegrambot.service.TelegramUserService;
 
+
+import com.example.Basketballtelegrambot.service.TelegramUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 
 import static com.example.Basketballtelegrambot.command.CommandName.NO;
@@ -17,6 +21,8 @@ import static com.example.Basketballtelegrambot.command.CommandName.NO;
 
 @Component
 public class BasketballTelegramBot extends TelegramLongPollingBot {
+
+
 
     public static String COMMAND_PREFIX = "/";
 
@@ -28,9 +34,11 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
 
     private final CommandContainer commandContainer;
 
+     @Autowired
     public BasketballTelegramBot(TelegramUserService telegramUserService) {
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService );
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService);
     }
+
 
 
 

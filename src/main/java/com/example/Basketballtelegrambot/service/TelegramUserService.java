@@ -1,6 +1,7 @@
 package com.example.Basketballtelegrambot.service;
 
 import com.example.Basketballtelegrambot.repository.entity.TelegramUser;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,12 +10,13 @@ import java.util.Optional;
 /**
  * {@link Service} for handling {@link TelegramUser} entity.
  */
-public interface TelegramUserService {
 
+
+public interface TelegramUserService {
     /**
      * Save provided {@link TelegramUser} entity.
      *
-     * @param telegramUser provided telegram user.
+     * @param  telegramUser provided telegram user.
      */
     void save(TelegramUser telegramUser);
 
@@ -23,7 +25,7 @@ public interface TelegramUserService {
      *
      * @return the collection of the active {@link TelegramUser} objects.
      */
-    List<TelegramUser> retriveAllActiveUsers();
+    List<TelegramUser> retrieveAllActiveUsers();
 
     /**
      * Find {@link TelegramUser} by chatId.

@@ -21,8 +21,9 @@ public class HelpCommand implements  Command{
                     + "%s - приостановить работу со мной\n"
                     + "%s - получить помощь в работе со мной\n"
                     + "%s - получить будущие события\n"
+                    + "%s - получить будущие события\n"
                     + "%s - получить прошедшие события\n",
-            START.getCommandName(), STOP.getCommandName(),HELP.getCommandName() , FUTURE.getCommandName() , PAST.getCommandName() );
+            START.getCommandName(), STOP.getCommandName(),HELP.getCommandName() , FUTURE.getCommandName() ,STAT.getCommandName(), PAST.getCommandName() );
 
     public HelpCommand(SendBotMessageService sendBotMessageService) {
         this.sendBotMessageService = sendBotMessageService;
