@@ -1,6 +1,6 @@
 #Basketball telegram bot
-![87- Converted](https://www.google.com/imgres?imgurl=https%3A%2F%2Ftelegramchannels.me%2Fstorage%2Fmedia-logo%2F2008%2Fnbapicksbets.jpg&imgrefurl=https%3A%2F%2Ftelegramchannels.me%2Fchannels%2Fnbapicksbets&tbnid=9PT5zn0mKetY9M&vet=12ahUKEwjWuumokfb4AhVCh_0HHVeIAZwQMygDegUIARDEAQ..i&docid=oiQLvsZ-Yu8MCM&w=320&h=320&q=basketball%20telegram%20bot&ved=2ahUKEwjWuumokfb4AhVCh_0HHVeIAZwQMygDegUIARDEAQ)
-Basketball telegram bot for people who loves basketball
+
+Basketball telegram bot for people who loves basketball and want to make looking for future games more easy.
 ## Idea
 The main idea is to create bot which can help you to see future games and odds on them and also sse games with final result.
 ## MVP Scope
