@@ -21,7 +21,7 @@ jobs:
       with:
         spring.datasource.initialization-mode=always
         spring.datasource.platform=postgres
-        spring.datasource.url=jdbc:postgresql://localhost:5432/BTB_db
+        spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
         spring.datasource.username=postgres
         spring.datasource.password=7410
         java-version: '11'

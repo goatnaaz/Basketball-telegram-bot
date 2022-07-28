@@ -19,6 +19,7 @@
 		<telegrambot.starter.version>5.0.1</telegrambot.starter.version>
 		<unirest.version>3.11.01</unirest.version>
 		<apache.commons.version>3.11</apache.commons.version>
+
 	</properties>
 
 	<dependencies>
@@ -50,7 +51,18 @@
 		</dependency>
 
 
+		<dependency>
+			<!-- jsoup HTML parser library @ https://jsoup.org/ -->
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.15.2</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache.commons.version}</version>
+		</dependency>
 
 
 		<dependency>

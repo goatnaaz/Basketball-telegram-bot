@@ -2,6 +2,7 @@ package com.example.Basketballtelegrambot.commandTest;
 
 import com.example.Basketballtelegrambot.bot.BasketballTelegramBot;
 import com.example.Basketballtelegrambot.command.Command;
+import com.example.Basketballtelegrambot.service.FeedbackService;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 import com.example.Basketballtelegrambot.service.SendBotMessageServiceImpl;
 
@@ -21,6 +22,9 @@ abstract class AbstractCommandTest {
     protected BasketballTelegramBot basketballTelegramBot = Mockito.mock(BasketballTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(basketballTelegramBot);
     protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
+    protected FeedbackService feedbackService = Mockito.mock(FeedbackService.class);
+
+
 
 
 

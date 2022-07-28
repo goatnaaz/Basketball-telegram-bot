@@ -1,11 +1,11 @@
 package com.example.Basketballtelegrambot.command;
 
 
+import com.example.Basketballtelegrambot.service.FeedbackService;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 
 import com.example.Basketballtelegrambot.service.TelegramUserService;
 import com.google.common.collect.ImmutableMap;
-import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static com.example.Basketballtelegrambot.command.CommandName.*;
 
@@ -16,7 +16,8 @@ public class CommandContainer {
     private final ImmutableMap<String, Command> commandMap;
     private final Command unknownCommand;
 
-    public CommandContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService) {
+    public CommandContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService , FeedbackService feedbackService) {
+
 
         commandMap = ImmutableMap.<String, Command>builder()
                 .put(START.getCommandName(), new StartCommand(sendBotMessageService , telegramUserService))
@@ -26,6 +27,8 @@ public class CommandContainer {
                 .put(PAST.getCommandName(), new PastCommand(sendBotMessageService))
                 .put(FUTURE.getCommandName(), new FutureCommand(sendBotMessageService))
                 .put(STAT.getCommandName(), new StatCommand(sendBotMessageService, telegramUserService))
+                .put(FEEDBACK.getCommandName(), new FeedbackCommand(sendBotMessageService , feedbackService))
+                .put(MESSAGE.getCommandName(), new MessageCommand(sendBotMessageService, feedbackService))
                 .build();
 
         unknownCommand = new UnknownCommand(sendBotMessageService);

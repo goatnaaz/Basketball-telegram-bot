@@ -3,6 +3,7 @@ package com.example.Basketballtelegrambot.command;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 import com.example.Basketballtelegrambot.repository.entity.TelegramUser;
 import com.example.Basketballtelegrambot.service.TelegramUserService;
+import org.hibernate.Hibernate;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import java.util.Optional;
 
@@ -32,6 +33,7 @@ public class StopCommand implements  Command{
                 .ifPresent(it -> {
                     it.setActive(false);
                     telegramUserService.save(it);
+
                 });
     }
 }
