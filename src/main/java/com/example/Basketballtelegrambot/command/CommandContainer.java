@@ -18,6 +18,7 @@ public class CommandContainer {
 
     public CommandContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService , FeedbackService feedbackService) {
 
+
         commandMap = ImmutableMap.<String, Command>builder()
                 .put(START.getCommandName(), new StartCommand(sendBotMessageService , telegramUserService))
                 .put(STOP.getCommandName(), new StopCommand(sendBotMessageService , telegramUserService))

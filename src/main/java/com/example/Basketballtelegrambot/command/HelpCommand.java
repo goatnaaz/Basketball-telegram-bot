@@ -26,6 +26,7 @@ public class HelpCommand implements  Command{
                     + "%s - получить прошедшие события\n",
             START.getCommandName(), STOP.getCommandName(),HELP.getCommandName() , FUTURE.getCommandName() ,STAT.getCommandName(),FEEDBACK.getCommandName() ,PAST.getCommandName() );
 
+
     public HelpCommand(SendBotMessageService sendBotMessageService) {
         this.sendBotMessageService = sendBotMessageService;
     }

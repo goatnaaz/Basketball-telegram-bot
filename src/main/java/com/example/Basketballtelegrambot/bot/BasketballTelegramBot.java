@@ -36,8 +36,10 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
      @Autowired
+
     public BasketballTelegramBot(TelegramUserService telegramUserService , FeedbackService feedbackService) {
         this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService , feedbackService);
+
     }
 
 

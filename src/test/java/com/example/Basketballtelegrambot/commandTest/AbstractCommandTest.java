@@ -26,6 +26,8 @@ abstract class AbstractCommandTest {
 
 
 
+
+
     abstract String getCommandName();
 
     abstract String getCommandMessage();
