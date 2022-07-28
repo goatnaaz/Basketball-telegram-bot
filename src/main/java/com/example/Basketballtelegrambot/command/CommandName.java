@@ -16,7 +16,11 @@ public enum CommandName {
 
     STAT("/stat"),
 
-    HELP("/help");
+    FEEDBACK("/feedback"),
+
+    HELP("/help"),
+
+    MESSAGE("/message");
 
     private final String commandName;
 

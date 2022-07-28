@@ -4,6 +4,7 @@ import com.example.Basketballtelegrambot.command.Command;
 import com.example.Basketballtelegrambot.command.CommandContainer;
 import com.example.Basketballtelegrambot.command.CommandName;
 import com.example.Basketballtelegrambot.command.UnknownCommand;
+import com.example.Basketballtelegrambot.service.FeedbackService;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 
 import com.example.Basketballtelegrambot.service.TelegramUserService;
@@ -24,7 +25,8 @@ public class CommandContainerTest {
     public void init() {
         SendBotMessageService sendBotMessageService = Mockito.mock(SendBotMessageService.class);
         TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
-        commandContainer = new CommandContainer(sendBotMessageService, telegramUserService);
+        FeedbackService feedbackService = Mockito.mock(FeedbackService.class);
+        commandContainer = new CommandContainer(sendBotMessageService, telegramUserService , feedbackService);
     }
     @Test
     public void shouldGetAllTheExistingCommands() {

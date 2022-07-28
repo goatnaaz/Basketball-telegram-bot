@@ -1,6 +1,7 @@
 package com.example.Basketballtelegrambot.bot;
 
 import com.example.Basketballtelegrambot.command.CommandContainer;
+import com.example.Basketballtelegrambot.service.FeedbackService;
 import com.example.Basketballtelegrambot.service.SendBotMessageServiceImpl;
 
 
@@ -35,8 +36,8 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
      @Autowired
-    public BasketballTelegramBot(TelegramUserService telegramUserService) {
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService);
+    public BasketballTelegramBot(TelegramUserService telegramUserService , FeedbackService feedbackService) {
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService , feedbackService);
     }
 
 

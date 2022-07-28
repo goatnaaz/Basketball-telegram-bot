@@ -58,6 +58,7 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__feedback_tabe.sql" connection-id="762435e1-5ac8-439d-93e9-04bfb1048c6e" session-id="MAIN" current-schema="information_schema" />
     <mapping file-url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__tg_user_tabe.sql" connection-id="762435e1-5ac8-439d-93e9-04bfb1048c6e" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
