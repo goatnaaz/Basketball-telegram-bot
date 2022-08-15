@@ -15,6 +15,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 
+import java.util.List;
+
 import static com.example.Basketballtelegrambot.command.CommandName.NO;
 
 
@@ -36,8 +38,8 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
      @Autowired
-    public BasketballTelegramBot(TelegramUserService telegramUserService , FeedbackService feedbackService) {
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService , feedbackService);
+    public BasketballTelegramBot(TelegramUserService telegramUserService , FeedbackService feedbackService ,   @Value("#{'${bot.admins}'.split(',')}") List<String> admins) {
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService , feedbackService , admins);
     }
 
 
@@ -47,12 +49,12 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {
             String message = update.getMessage().getText().trim();
+            String username = update.getMessage().getFrom().getUserName();
             if (message.startsWith(COMMAND_PREFIX)) {
                 String commandIdentifier = message.split(" ")[0].toLowerCase();
-
-                commandContainer.retrieveCommand(commandIdentifier).execute(update);
+                commandContainer.retrieveCommand(commandIdentifier, username).execute(update);
             } else {
-                commandContainer.retrieveCommand(NO.getCommandName()).execute(update);
+                commandContainer.retrieveCommand(NO.getCommandName(), username).execute(update);
             }
         }
 

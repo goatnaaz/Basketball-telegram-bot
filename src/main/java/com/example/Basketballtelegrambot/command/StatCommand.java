@@ -1,5 +1,6 @@
 package com.example.Basketballtelegrambot.command;
 
+import com.example.Basketballtelegrambot.command.annotation.AdminCommand;
 import com.example.Basketballtelegrambot.service.SendBotMessageService;
 import com.example.Basketballtelegrambot.service.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 /**
  * Statistics {@link Command}.
  */
+@AdminCommand
 public class StatCommand  implements  Command{
 
     private final TelegramUserService telegramUserService;

@@ -36,7 +36,7 @@ public class FutureCommand implements Command{
     public void execute(Update update) {
         {
             try {
-                Document doc = Jsoup.connect("https://www.betmonitor.com/odds-comparison/basketball/european-universities-championship-men/10006327").get();
+                Document doc = Jsoup.connect("https://www.betmonitor.com/odds-comparison/basketball/today").get();
                 Elements information = doc.getElementsByAttributeValue("class", "league-event-new");
                 for (Element info : information) {
                     Event events = new Event();

@@ -13,6 +13,8 @@ public class Event {
 
     private String tournament ;
     private String date;
+
+    private String result;
     private String team1;
     private String team2;
     private String odd1;
@@ -33,6 +35,12 @@ public class Event {
 
     public void setDate (String date ) {
         this.date  = date ;
+    }
+
+    public String getResult() {return result;
+    }
+
+    public void setResult(String result) {this.result = result;
     }
 
     public String getTeam1() {
@@ -72,11 +80,21 @@ public class Event {
     @Override
     public String toString() {
         return
-                "Tournament=" + tournament  +
-                ", Date=" + date  +
-                ", Teams=" + team1  +
-                ", Win1=" + odd1  +
-                ", Win2=" + odd2;
+                "TOURNAMENT=" + tournament  +
+                "\n DATE=" + date  +
+                "\n TEAMS=" + team1  +
+                "\n WIN1=" + odd1  +
+                "\n WIN2=" + odd2;
+    }
+
+
+    public String toStringForPastEvents() {
+        return
+                "TOURNAMENT=" + tournament  +
+                        "\n TEAMS=" + team1  +
+                        "\n RESULT" + result +
+                        "\n WIN1=" + odd1  +
+                        "\n WIN2=" + odd2;
     }
 
 

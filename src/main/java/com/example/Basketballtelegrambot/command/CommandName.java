@@ -20,6 +20,8 @@ public enum CommandName {
 
     HELP("/help"),
 
+    ADMIN_HELP("/ahelp"),
+
     MESSAGE("/message");
 
     private final String commandName;
