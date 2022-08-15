@@ -38,8 +38,10 @@ public class BasketballTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
      @Autowired
+
     public BasketballTelegramBot(TelegramUserService telegramUserService , FeedbackService feedbackService ,   @Value("#{'${bot.admins}'.split(',')}") List<String> admins) {
         this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this) , telegramUserService , feedbackService , admins);
+
     }
 
 
